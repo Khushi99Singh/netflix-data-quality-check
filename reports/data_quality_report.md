@@ -21,6 +21,12 @@ Row count is unchanged (8,807) after cleaning.
 
 ## 3. Issues found and fixes applied
 
+**Severity criteria**
+
+- **High:** values are wrong, or a column is unusable for analysis until fixed; or more than 25% of a column is missing.
+- **Medium:** values are usable but need cleaning or conversion before analysis (wrong data type, mixed formats, stray characters that break parsing); or 5-25% of a column is missing.
+- **Low:** minor issues with little effect on results; or less than 5% of a column is missing.
+
 | # | Issue | Column(s) | Rows affected | Severity | Fix applied |
 |---|---|---|---|---|---|
 | 1 | Missing values | director | 2,634 (29.9%) | High | Filled with "Unknown" |
